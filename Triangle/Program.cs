@@ -9,15 +9,22 @@ namespace Triangle
 {
     class Program
     {
+
+        public static void menuFunction()
+        {
+            Console.WriteLine("1. Enter Tringle Dimension");
+            Console.WriteLine("2. Exit");
+        }
+
+
         public static void Main(string[] args)
         {
 
             int s1, s2, s3;
             int userInput;
 
-            Console.WriteLine("1. Enter Tringle Dimension");
-            Console.WriteLine("2. Exit");
-
+            menuFunction();
+            
             do
             {
                 Console.WriteLine("Enter the option from above choices: ");
