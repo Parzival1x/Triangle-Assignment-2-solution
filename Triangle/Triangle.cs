@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Triangle
 {
-    public class Triangle
+    public class TriangleSolution
     {
 
         public static string TriangleAnalyze(int s1, int s2, int s3)
@@ -16,7 +16,8 @@ namespace Triangle
 
             if (s1 <= 0 || s2 <= 0 || s3 <= 0)
             {
-                Console.WriteLine("Sides can't produce a triangle");
+                //Console.WriteLine("Sides cannot produce a triangle");
+                triangleType = "Not Recognized (Side < 0)";
             }
 
             if (s1 > 0 && s2 > 0 && s3 > 0)

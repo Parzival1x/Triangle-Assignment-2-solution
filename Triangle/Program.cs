@@ -9,14 +9,11 @@ namespace Triangle
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-
 
             int s1, s2, s3;
             int userInput;
-
-
 
             Console.WriteLine("1. Enter Tringle Dimension");
             Console.WriteLine("2. Exit");
@@ -41,8 +38,8 @@ namespace Triangle
                 s3 = Convert.ToInt32(Console.ReadLine());
 
 
-                string typeOfTriangle = Triangle.TriangleAnalyze(s1, s2, s3);
-                Console.WriteLine("\n\n The Triangle is {0} Type", typeOfTriangle);
+                string TriangleType = TriangleSolution.TriangleAnalyze(s1, s2, s3);
+                Console.WriteLine("\n\n The Triangle is {0} Type", TriangleType);
                 Console.ReadLine();
             }
 
